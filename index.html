@@ -5,25 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setlist Visualizer</title>
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/foundation.min.css" />
     <link rel="stylesheet" href="css/default.css" />
     <script src="js/vendor/modernizr.js"></script>
+    
   </head>
   <body>
+    <header class="row">
+      <h1>Setlist Visualizer <small>Summer Breeze 2014</small></h1>
+    </header>
 
-    <div id="container"></div>
+    <section id="container" class="row">
 
+      <!-- tab nav BEGIN -->
+      <ul id="main-nav" class="tabs" data-tab>
+        <li class="tab-title active">
+          <a href="#home">Start</a>
+        </li>
+      </ul>
+      <!-- tab nav END -->
+
+      <!-- tab content BEGIN -->
+      <div id="main-content" class="tabs-content">
+        <section class="content active" id="home">
+          <p>Welcome bla bla...</p>
+          <a href="#" id="loadEverything" class="button">Load</a>
+        </section>
+      </div>
+      <!-- tab content END -->
+
+    </section>
+
+    <script src="js/vendor/jquery-1.11.1.min.js"></script>
+    <script src="js/vendor/foundation.js"></script>
     <script src="js/vendor/d3.min.js"></script>
+    <script src="js/vendor/foundation.tab.js"></script>
     <script src="js/application.js"></script>
-    <script>
-      d3.json("data/example.json", function(data) {
-        var container = d3.select("#container");
 
-        data.days.forEach(function(day, i){
-          container.append('section')
-          .datum(day)
-          .call(setlistVisualizer);
+    <script>
+      $(document).foundation();
+
+      $('#loadEverything').on('click', function(){
+        d3.json("data/example.json", function(data) {
+          var content = d3.select('#main-content'),
+              nav = d3.select('#main-nav');
+
+          data.days.forEach(function(day, i){
+            var dayName = day.day,
+                dayNameLowercase = dayName.toLowerCase();
+
+            nav.append('li')
+              .attr('class', 'tab-title active')
+              .append('a')
+              .attr('href', '#'+dayNameLowercase)
+              .text(dayName);
+
+            content.append('section')
+            .attr('class', 'content')
+            .attr('id', dayNameLowercase)
+            .datum(day)
+            .call(setlistVisualizer);
+          });
         });
 
+        $('#loadEverything').hide();
       });
     </script>
   </body>

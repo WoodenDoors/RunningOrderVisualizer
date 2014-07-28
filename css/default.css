@@ -1,13 +1,16 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 62.5%;
 }
 
 .axis path, .axis line {
 	fill: none;
 	stroke: #000;
 	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-size: 0.7em;
 }
 
 .xaxis path {

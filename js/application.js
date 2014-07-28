@@ -156,8 +156,7 @@ var setlistVisualizer = (function(){
 		// svg container
 		var svg = selection.append("svg")
 			.attr("width", width + verticalPadding*2)
-			.attr("height", height + horizontalPadding*2)
-			.style("border", "1px solid black");
+			.attr("height", height + horizontalPadding*2);
 
 		// axis group
 		var yAxisGroup = svg.append("g")

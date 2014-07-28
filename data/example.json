@@ -1,7 +1,7 @@
 {
 	"days": [
 		{
-			"day": "Mittwoch",
+			"day": "Wednesday",
 			"stages": [
 				{
 					"stage": "T-Stage",
@@ -97,7 +97,7 @@
 			]
 		},
 		{
-			"day": "Donnerstag",
+			"day": "Thursday",
 			"stages": [
 				{
 					"stage": "Main Stage",
@@ -251,7 +251,7 @@
 			]
 		},
 		{
-			"day": "Freitag",
+			"day": "Friday",
 			"stages": [
 				{
 					"stage": "Main Stage",
@@ -404,7 +404,7 @@
 				}
 			]
 		},{
-			"day": "Samstag",
+			"day": "Saturday",
 			"stages": [
 				{
 					"stage": "Main Stage",
