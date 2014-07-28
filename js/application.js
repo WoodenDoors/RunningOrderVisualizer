@@ -74,6 +74,26 @@ var setlistVisualizer = (function(){
 								.call(xAxis);
 
 
+			var getPositionX = function(stage){
+				return xScale(stage.stage);
+
+			}, getPositionY = function(d){
+				console.log( "y date: "+ getDate(d.from) );
+				console.log( "y scale: "+ yScale(getDate(d.from)) );
+				return yScale(getDate(d.from));
+
+			}, getWidth = function (d) { 
+				return xScale.rangeBand();
+
+			}, getHeight = function (d) {
+				var dateFrom = getDate(d.from),
+				dateUntil = getDate(d.until);
+				return yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
+			
+			}, getFill = function(){
+				return '#'+Math.floor(Math.random()*16777215).toString(16); 
+			};
+
 			// stages
 			data.stages.forEach(function(stage, i){
 				console.log(stage);
@@ -86,25 +106,11 @@ var setlistVisualizer = (function(){
 
 				var rectangle = slots
 					.transition().duration(500)
-					.attr("x", function (d) {
-						return xScale(stage.stage);
-					})
-					.attr("y", function (d) {
-						console.log( "y date: "+ getDate(d.from) );
-						console.log( "y scale: "+ yScale(getDate(d.from)) );
-						return yScale(getDate(d.from));
-					})
-					.attr("width", function (d) { 
-						return xScale.rangeBand();
-					})
-					.attr("height", function (d) {
-						var dateFrom = getDate(d.from),
-							dateUntil = getDate(d.until);
-						return yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
-					})
-					.style("fill", function(d) {
-						return '#'+Math.floor(Math.random()*16777215).toString(16); 
-					});
+					.attr("x", function (d) { return getPositionX(stage);})
+					.attr("y", getPositionY)
+					.attr("width", getWidth)
+					.attr("height", getHeight)
+					.style("fill", getFill);
 			});
 			console.log("/stages");
 		});
