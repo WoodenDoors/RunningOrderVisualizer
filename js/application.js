@@ -3,7 +3,8 @@ var setlistVisualizer = (function(){
 
 	var width = 900,
 		height = 200,
-		padding = 50,
+		verticalPadding = 60,
+		horizontalPadding = 30,
 		datePrefix = "2014-08-13T",
 		dateSuffix = ":00+0200";
 
@@ -25,24 +26,52 @@ var setlistVisualizer = (function(){
 
 			// svg container
 			var svg = selection.append("svg")
-				.attr("width", width + padding*2)
-				.attr("height", height + padding*2)
+				.attr("width", width + verticalPadding*2)
+				.attr("height", height + horizontalPadding*2)
 				.style("border", "1px solid black");
 
-			// scales and axis
-			var xScale = d3.scale.linear()
-								.domain([0, 800])
-								.range([0, height]);
-			var yAxis = d3.svg.axis().scale(xScale).orient("left");
+			var minDate = getDate("12:00"),
+				maxDate = getDate("23:59");
 
+
+			var stageNames = [];
+			data.stages.forEach(function(stage, i){
+				stageNames.push(stage.stage);
+			});
+			console.log("stages: "+stageNames);
+
+
+			// scales and axis
+			var yScale = d3.time.scale()
+								.domain([minDate, maxDate])
+								.range([0, height]),
+
+				xScale = d3.scale.ordinal()
+								.domain(stageNames)
+								.rangeBands([0, width]),
+
+				yAxis = d3.svg.axis()
+								.scale(yScale)
+								.orient("left")
+								.ticks(d3.time.hours, 2)
+								.tickFormat(d3.time.format('%H:%M')),
+
+				xAxis = d3.svg.axis()
+								.scale(xScale)
+								.orient('top');
+
+			// axis group
 			var yAxisGroup = svg.append("g")
+								.attr('class', 'yaxis axis')
 								.attr(
 									"transform",
-									"translate("+padding+","+padding+")"
+									"translate("+verticalPadding+","+horizontalPadding+")"
 								)
+								.call(yAxis),
+
+				xAxisGroup = svg.append('g')
+								.attr('class', 'xaxis axis')
 								.call(yAxis);
-
-
 			// stages
 			data.stages.forEach(function(stage, i){
 				console.log(stage);
@@ -55,18 +84,18 @@ var setlistVisualizer = (function(){
 
 				var rectangle = slots
 					.attr("x", function (d) {
-						return 0;
+						return 1 + i*150;
 					})
-					.attr("y", function (d) { 
-						return xScale(timeToNumber(d.from));
-						//return getDate(d.from);
+					.attr("y", function (d) {
+						console.log( "y date: "+ getDate(d.from) );
+						console.log( "y scale: "+ yScale(getDate(d.from)) );
+						return yScale(getDate(d.from));
 					})
 					.attr("width", function (d) { 
 						return 150; 
 					})
-					.attr("height", function (d) { 
-						return xScale(timeToNumber(d.until)-timeToNumber(d.from));
-						//return getDate(d.until);
+					.attr("height", function (d) {
+						return yScale(getDate(d.until));
 					})
 					.style("fill", function(d) {
 						return '#'+Math.floor(Math.random()*16777215).toString(16); 
