@@ -2,7 +2,7 @@ var setlistVisualizer = (function(){
 	'use strict';
 
 	var width = 900,
-		height = 200,
+		height = 400,
 		verticalPadding = 60,
 		horizontalPadding = 30,
 		datePrefix = "2014-08-13T",
@@ -44,7 +44,7 @@ var setlistVisualizer = (function(){
 			// scales and axis
 			var yScale = d3.time.scale()
 								.domain([minDate, maxDate])
-								.range([0, height]),
+								.range([1, height]),
 
 				xScale = d3.scale.ordinal()
 								.domain(stageNames)
@@ -72,6 +72,8 @@ var setlistVisualizer = (function(){
 				xAxisGroup = yAxisGroup.append('g')
 								.attr('class', 'xaxis axis')
 								.call(xAxis);
+
+
 			// stages
 			data.stages.forEach(function(stage, i){
 				console.log(stage);
@@ -83,6 +85,7 @@ var setlistVisualizer = (function(){
 								.append("rect");
 
 				var rectangle = slots
+					.transition().duration(500)
 					.attr("x", function (d) {
 						return xScale(stage.stage);
 					})
@@ -95,7 +98,9 @@ var setlistVisualizer = (function(){
 						return xScale.rangeBand();
 					})
 					.attr("height", function (d) {
-						return yScale(getDate(d.until));
+						var dateFrom = getDate(d.from),
+							dateUntil = getDate(d.until);
+						return yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
 					})
 					.style("fill", function(d) {
 						return '#'+Math.floor(Math.random()*16777215).toString(16); 
