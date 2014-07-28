@@ -24,22 +24,15 @@ var setlistVisualizer = (function(){
 		selection.each(function(data) {
 			//console.log(data);
 
-			// svg container
-			var svg = selection.append("svg")
-				.attr("width", width + verticalPadding*2)
-				.attr("height", height + horizontalPadding*2)
-				.style("border", "1px solid black");
-
 			var minDate = getDate("12:00"),
 				maxDate = getDate("23:59");
 
-
+			// stage names for ordinal scale
 			var stageNames = [];
 			data.stages.forEach(function(stage, i){
 				stageNames.push(stage.stage);
 			});
 			console.log("stages: "+stageNames);
-
 
 			// scales and axis
 			var yScale = d3.time.scale()
@@ -60,19 +53,6 @@ var setlistVisualizer = (function(){
 								.scale(xScale)
 								.orient('top');
 
-			// axis group
-			var yAxisGroup = svg.append("g")
-								.attr('class', 'yaxis axis')
-								.attr(
-									"transform",
-									"translate("+verticalPadding+","+horizontalPadding+")"
-								)
-								.call(yAxis),
-
-				xAxisGroup = yAxisGroup.append('g')
-								.attr('class', 'xaxis axis')
-								.call(xAxis);
-
 
 			var getPositionX = function(stage){
 				return xScale(stage.stage);
@@ -90,9 +70,50 @@ var setlistVisualizer = (function(){
 				dateUntil = getDate(d.until);
 				return yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
 			
-			}, getFill = function(){
-				return '#'+Math.floor(Math.random()*16777215).toString(16); 
+			}, calcForegroundColor = function(backgroundColor){
+				var rgb = backgroundColor.match(/.{1,2}/g),
+					brightness = calcBrightness(rgb[0], rgb[1], rgb[2]);
+
+				console.log(backgroundColor +": "+rgb+" : "+brightness);
+				return (brightness < 130) ? '#FFF' : '#000';
+
+			}, calcBrightness = function(r, g, b){
+				r = parseInt(r, 16);
+				g = parseInt(g, 16);
+				b = parseInt(b, 16);
+				return Math.sqrt(
+					r * r * 0.299 +
+					g * g * 0.587 +
+					b * b * 0.114);
+
+			}, getFill = function(d){
+				var hexColor = Math.floor(Math.random()*16777215).toString(16);
+				d.textColor = calcForegroundColor(hexColor); // precalc
+				return '#'+hexColor;
+
+			}, getTextColor = function(d){
+				return d.textColor; // get precalc value
 			};
+
+
+			// svg container
+			var svg = selection.append("svg")
+				.attr("width", width + verticalPadding*2)
+				.attr("height", height + horizontalPadding*2)
+				.style("border", "1px solid black");
+
+			// axis group
+			var yAxisGroup = svg.append("g")
+								.attr('class', 'yaxis axis')
+								.attr(
+									"transform",
+									"translate("+verticalPadding+","+horizontalPadding+")"
+								)
+								.call(yAxis),
+
+				xAxisGroup = yAxisGroup.append('g')
+								.attr('class', 'xaxis axis')
+								.call(xAxis);
 
 			// stages
 			data.stages.forEach(function(stage, i){
@@ -126,6 +147,7 @@ var setlistVisualizer = (function(){
 					.attr('class', 'bandname')
 					.attr('dx', 10)
 					.attr('dy', 18)
+					.attr('fill', getTextColor)
 					.text(function(d) { return d.band; });
 			});
 			console.log("/stages");
