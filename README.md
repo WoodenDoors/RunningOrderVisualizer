@@ -1,4 +1,4 @@
-Setlist Visualizer
+Running Order Visualizer
 ================================
 Currently with SummerBreeze 2014 data
 

@@ -8,8 +8,9 @@ body {
 	display: none;
 }
 
-.footer {
+.footer p {
 	font-size: 0.8em;
+	margin-bottom: 0.4em;
 }
 
 .axis path, .axis line {
