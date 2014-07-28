@@ -1,6 +1,9 @@
 var setlistVisualizer = (function(){
 	'use strict';
 
+	/**
+	 * config
+	 */
 	var width = 900,
 		height = 400,
 		verticalPadding = 60,
@@ -8,21 +11,23 @@ var setlistVisualizer = (function(){
 		datePrefix = "2014-08-13T",
 		dateSuffix = ":00+0200";
 
+	/**
+	 * crates a date from a dateTimeString
+	 * @param  {[type]} timeString (expected format: yyyy-mm-ddThh:mm)
+	 * @return {Date}
+	 */
 	function getDate(timeString) {
 		return new Date(timeString+dateSuffix);
 	}
 
-	function timeToNumber(timeString){
-		var hours = parseInt(timeString.split(":")[0], 10) +
-					(parseInt(timeString.split(":")[1])/60);
-		var yPos = Math.floor(Math.pow(hours, 5)/10000);
-		console.log("yPos: "+ yPos);
-		return yPos;
-	}
-
-	var drawChart = function(data, selection){
-		// stage names for ordinal scale
-		// and earlierst- and latest play times
+	/**
+	 * scan for stage-names (for ordinal scale)
+	 * and earlierst- and latest play times
+	 * @param  {Object} data
+	 * @return {Object}	with the attributes "stageNames", 
+	 *                  "earlierstTime" and "latestTime"
+	 */
+	var scanData = function(data){
 		var stageNames = [],
 			earlierstTime = data.stages[0].bands[0].from,
 			latestTime = data.stages[0].bands[0].until;
@@ -42,8 +47,22 @@ var setlistVisualizer = (function(){
 		console.log("earlierstTime: "+earlierstTime);
 		console.log("latestTime: "+latestTime);
 
-		var minDate = getDate(earlierstTime),
-			maxDate = getDate(latestTime);
+		return {
+			stageNames: stageNames,
+			earlierstTime: earlierstTime,
+			latestTime: latestTime
+		};
+	};
+
+	/**
+	 * internal main charting function
+	 * @param  {Object} data      input-data
+	 * @param  {Object} selection
+	 */
+	var drawChart = function(data, selection){
+		var scannedData = scanData(data),
+			minDate = getDate(scannedData.earlierstTime),
+			maxDate = getDate(scannedData.latestTime);
 
 		// scales and axis
 		var yScale = d3.time.scale()
@@ -51,7 +70,7 @@ var setlistVisualizer = (function(){
 							.range([1, height]),
 
 			xScale = d3.scale.ordinal()
-							.domain(stageNames)
+							.domain(scannedData.stageNames)
 							.rangeBands([1, width]),
 
 			yAxis = d3.svg.axis()
@@ -157,7 +176,6 @@ var setlistVisualizer = (function(){
 				.attr('fill', getTextColor)
 				.text(function(d) { return d.band; });
 		});
-		console.log("/stages");
 	};
 
 	/**
