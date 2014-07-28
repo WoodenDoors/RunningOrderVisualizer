@@ -16,9 +16,36 @@ var setlistVisualizer = (function(){
 	 * @param  {[type]} timeString (expected format: yyyy-mm-ddThh:mm)
 	 * @return {Date}
 	 */
-	function getDate(timeString) {
+	var getDate = function(timeString) {
 		return new Date(timeString+dateSuffix);
-	}
+	};
+
+	/**
+	 * calculate brightness from rgb value
+	 */
+	var calcBrightness = function(r, g, b){
+		r = parseInt(r, 16);
+		g = parseInt(g, 16);
+		b = parseInt(b, 16);
+		return Math.sqrt(
+			r * r * 0.299 +
+			g * g * 0.587 +
+			b * b * 0.114);
+	};
+
+	/**
+	 * calculate a matching foreground color to a given background color
+	 * @param  {[type]} backgroundColor as a hex string
+	 * @return {String}                 foregroundColor as a hex string
+	 */
+	var  calcForegroundColor = function(backgroundColor){
+		var rgb = backgroundColor.match(/.{1,2}/g),
+			brightness = calcBrightness(rgb[0], rgb[1], rgb[2]);
+
+		//console.log(backgroundColor +": "+rgb+" : "+brightness);
+		return (brightness < 130) ? '#FFF' : '#000';
+
+	};
 
 	/**
 	 * scan for stage-names (for ordinal scale)
@@ -95,8 +122,9 @@ var setlistVisualizer = (function(){
 
 		}, getHeight = function (d) {
 			var dateFrom = getDate(d.from),
-			dateUntil = getDate(d.until);
-			return yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
+				dateUntil = getDate(d.until),
+				diff = yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
+			return diff;
 		
 		}, calcForegroundColor = function(backgroundColor){
 			var rgb = backgroundColor.match(/.{1,2}/g),
