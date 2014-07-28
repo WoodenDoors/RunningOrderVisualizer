@@ -13,3 +13,7 @@ body {
 .xaxis path {
 	stroke: none;
 }
+
+.bandname {
+	font-size: 1.1rem;
+}

@@ -99,18 +99,34 @@ var setlistVisualizer = (function(){
 				console.log(stage);
 
 				// band slots
-				var slots = yAxisGroup.selectAll("rect")
+				var slots = yAxisGroup.selectAll(".slot")
 								.data(stage.bands)
 								.enter()
-								.append("rect");
+								.append("g")
+								.attr('class', 'slot')
+								.attr("transform", 
+									function(d, i) { 
+										return "translate("+
+											getPositionX(stage)+
+											","+
+											getPositionY(d)+
+											")";
+									});
 
-				var rectangle = slots
+
+				var rectangle = slots.append("rect")
 					.transition().duration(500)
-					.attr("x", function (d) { return getPositionX(stage);})
-					.attr("y", getPositionY)
+					//.attr("x", function (d) { return getPositionX(stage);})
+					//.attr("y", getPositionY)
 					.attr("width", getWidth)
 					.attr("height", getHeight)
 					.style("fill", getFill);
+
+				slots.append("text")
+					.attr('class', 'bandname')
+					.attr('dx', 10)
+					.attr('dy', 18)
+					.text(function(d) { return d.band; });
 			});
 			console.log("/stages");
 		});
