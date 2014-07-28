@@ -5,7 +5,7 @@ var setlistVisualizer = (function(){
 	 * config
 	 */
 	var width = 900,
-		height = 400,
+		height = 600,
 		verticalPadding = 60,
 		horizontalPadding = 30,
 		dateSuffix = ":00+0200";

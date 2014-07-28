@@ -2,6 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
+    <title>Summer Breeze 2014 Running Order</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setlist Visualizer</title>
     <link rel="stylesheet" href="css/normalize.css" />
@@ -12,10 +13,11 @@
   </head>
   <body>
     <header class="row">
-      <h1>Setlist Visualizer <small>Summer Breeze 2014</small></h1>
+      <h1>RunningOrder Visualizer <small>Summer Breeze 2014</small></h1>
     </header>
 
     <section id="container" class="row">
+      <div class="not-supported alert-box alert">Your browser doesn't support the requirements of this page. Go get a modern browser.</div>
 
       <!-- tab nav BEGIN -->
       <ul id="main-nav" class="tabs" data-tab>
@@ -28,13 +30,19 @@
       <!-- tab content BEGIN -->
       <div id="main-content" class="tabs-content">
         <section class="content active" id="home">
-          <p>Welcome bla bla...</p>
+          <p>This is a small completely-client-sided visualization tool, I wrote mainly to see which bands are overlapping on the Summer Breeze 2014 running order.
+          <br/>Should work for any kind of festival running order if you modify the input data accordingly though.</p>
           <a href="#" id="loadEverything" class="button">Load</a>
         </section>
       </div>
       <!-- tab content END -->
 
     </section>
+
+    <footer class="row footer">
+      <br/>data from <a href="http://www.summer-breeze.de/de/dateien/running-order/running-order-2014.pdf">the Summer-Breeze running order</a>
+      <br/>tools: <a href="http://jquery.com/">jquery</a>, <a href="http://foundation.zurb.com/">foundation</a>, <a href="http://d3js.org/">d3</a>, <a href="http://modernizr.com/">Modernizr</a>, <a href="http://subtlepatterns.com/">subtlepatterns</a>
+    </footer>
 
     <script src="js/vendor/jquery-1.11.1.min.js"></script>
     <script src="js/vendor/foundation.js"></script>
@@ -44,32 +52,37 @@
 
     <script>
       $(document).foundation();
+      if (!Modernizr.svg) {
+        $('#loadEverything').attr('disabled', true);
+        $('.not-supported').show();
+      } else {
 
-      $('#loadEverything').on('click', function(){
-        d3.json("data/example.json", function(data) {
-          var content = d3.select('#main-content'),
-              nav = d3.select('#main-nav');
+        $('#loadEverything').on('click', function(){
+          d3.json("data/example.json", function(data) {
+            var content = d3.select('#main-content'),
+                nav = d3.select('#main-nav');
 
-          data.days.forEach(function(day, i){
-            var dayName = day.day,
-                dayNameLowercase = dayName.toLowerCase();
+            data.days.forEach(function(day, i){
+              var dayName = day.day,
+                  dayNameLowercase = dayName.toLowerCase();
 
-            nav.append('li')
-              .attr('class', 'tab-title active')
-              .append('a')
-              .attr('href', '#'+dayNameLowercase)
-              .text(dayName);
+              nav.append('li')
+                .attr('class', 'tab-title active')
+                .append('a')
+                .attr('href', '#'+dayNameLowercase)
+                .text(dayName);
 
-            content.append('section')
-            .attr('class', 'content')
-            .attr('id', dayNameLowercase)
-            .datum(day)
-            .call(setlistVisualizer);
+              content.append('section')
+              .attr('class', 'content')
+              .attr('id', dayNameLowercase)
+              .datum(day)
+              .call(setlistVisualizer);
+            });
           });
-        });
 
-        $('#loadEverything').hide();
-      });
+          $('#loadEverything').hide();
+        });
+      }
     </script>
   </body>
 </html>

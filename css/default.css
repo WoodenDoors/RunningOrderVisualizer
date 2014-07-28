@@ -1,6 +1,15 @@
 
 body {
   font-family: "Open Sans", Arial, sans-serif;
+  background: url('../img/redox_01.png') repeat;
+}
+
+.not-supported {
+	display: none;
+}
+
+.footer {
+	font-size: 0.8em;
 }
 
 .axis path, .axis line {
