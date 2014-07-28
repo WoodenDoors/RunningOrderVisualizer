@@ -8,7 +8,6 @@ var setlistVisualizer = (function(){
 		height = 400,
 		verticalPadding = 60,
 		horizontalPadding = 30,
-		datePrefix = "2014-08-13T",
 		dateSuffix = ":00+0200";
 
 	/**
@@ -103,7 +102,7 @@ var setlistVisualizer = (function(){
 			yAxis = d3.svg.axis()
 							.scale(yScale)
 							.orient("left")
-							.ticks(d3.time.hours, 2)
+							.ticks(d3.time.minutes, 30)
 							.tickFormat(d3.time.format('%H:%M')),
 
 			xAxis = d3.svg.axis()
