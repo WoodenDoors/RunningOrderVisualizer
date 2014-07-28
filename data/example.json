@@ -8,13 +8,13 @@
 					"bands": [
 						{
 							"band": "Lost Society",
-							"from": "16:00",
-							"until": "16:45" 
+							"from": "2014-08-13T16:00",
+							"until": "2014-08-13T16:45" 
 						},
 						{
 							"band": "The Vintage Caravan",
-							"from": "17:15",
-							"until": "18:00"
+							"from": "2014-08-13T17:15",
+							"until": "2014-08-14T01:00"
 						}
 
 					]
@@ -29,8 +29,8 @@
 					"bands": [
 						{
 							"band": "Behemoth",
-							"from": "21:50",
-							"until": "22:50" 
+							"from": "2014-08-14T21:50",
+							"until": "2014-08-14T22:50" 
 						}
 					]
 				}, {			
@@ -38,8 +38,8 @@
 					"bands": [
 						{
 							"band": "The New Black",
-							"from": "22:45",
-							"until": "23:15"
+							"from": "2014-08-14T22:45",
+							"until": "2014-08-14T23:15"
 						}
 					]
 				}

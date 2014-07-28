@@ -9,7 +9,7 @@ var setlistVisualizer = (function(){
 		dateSuffix = ":00+0200";
 
 	function getDate(timeString) {
-		return new Date(datePrefix+timeString+dateSuffix);
+		return new Date(timeString+dateSuffix);
 	}
 
 	function timeToNumber(timeString){
@@ -22,17 +22,30 @@ var setlistVisualizer = (function(){
 
 	var chart = function(selection){
 		selection.each(function(data) {
-			//console.log(data);
-
-			var minDate = getDate("12:00"),
-				maxDate = getDate("23:59");
 
 			// stage names for ordinal scale
-			var stageNames = [];
+			// and earlierst- and latest play times
+			var stageNames = [],
+				earlierstTime = data.stages[0].bands[0].from,
+				latestTime = data.stages[0].bands[0].until;
+
 			data.stages.forEach(function(stage, i){
 				stageNames.push(stage.stage);
+				stage.bands.forEach(function(band, j){
+					if(band.from < earlierstTime) {
+						earlierstTime = band.from;
+					}
+					if(band.until > latestTime) {
+						latestTime = band.until;
+					}
+				});
 			});
 			console.log("stages: "+stageNames);
+			console.log("earlierstTime: "+earlierstTime);
+			console.log("latestTime: "+latestTime);
+
+			var minDate = getDate(earlierstTime),
+				maxDate = getDate(latestTime);
 
 			// scales and axis
 			var yScale = d3.time.scale()
@@ -137,8 +150,6 @@ var setlistVisualizer = (function(){
 
 				var rectangle = slots.append("rect")
 					.transition().duration(500)
-					//.attr("x", function (d) { return getPositionX(stage);})
-					//.attr("y", getPositionY)
 					.attr("width", getWidth)
 					.attr("height", getHeight)
 					.style("fill", getFill);
