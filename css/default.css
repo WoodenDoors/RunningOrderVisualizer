@@ -9,3 +9,7 @@ body {
 	stroke: #000;
 	shape-rendering: crispEdges;
 }
+
+.xaxis path {
+	stroke: none;
+}

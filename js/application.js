@@ -48,7 +48,7 @@ var setlistVisualizer = (function(){
 
 				xScale = d3.scale.ordinal()
 								.domain(stageNames)
-								.rangeBands([0, width]),
+								.rangeBands([1, width]),
 
 				yAxis = d3.svg.axis()
 								.scale(yScale)
@@ -69,9 +69,9 @@ var setlistVisualizer = (function(){
 								)
 								.call(yAxis),
 
-				xAxisGroup = svg.append('g')
+				xAxisGroup = yAxisGroup.append('g')
 								.attr('class', 'xaxis axis')
-								.call(yAxis);
+								.call(xAxis);
 			// stages
 			data.stages.forEach(function(stage, i){
 				console.log(stage);
@@ -84,7 +84,7 @@ var setlistVisualizer = (function(){
 
 				var rectangle = slots
 					.attr("x", function (d) {
-						return 1 + i*150;
+						return xScale(stage.stage);
 					})
 					.attr("y", function (d) {
 						console.log( "y date: "+ getDate(d.from) );
@@ -92,7 +92,7 @@ var setlistVisualizer = (function(){
 						return yScale(getDate(d.from));
 					})
 					.attr("width", function (d) { 
-						return 150; 
+						return xScale.rangeBand();
 					})
 					.attr("height", function (d) {
 						return yScale(getDate(d.until));
