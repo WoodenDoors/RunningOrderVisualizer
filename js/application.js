@@ -124,23 +124,10 @@ var setlistVisualizer = (function(){
 			var dateFrom = getDate(d.from),
 				dateUntil = getDate(d.until),
 				diff = yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
+
+			d.textHeight = (diff < 15) ? Math.floor(diff)-1 : 16;
+
 			return diff;
-		
-		}, calcForegroundColor = function(backgroundColor){
-			var rgb = backgroundColor.match(/.{1,2}/g),
-				brightness = calcBrightness(rgb[0], rgb[1], rgb[2]);
-
-			//console.log(backgroundColor +": "+rgb+" : "+brightness);
-			return (brightness < 130) ? '#FFF' : '#000';
-
-		}, calcBrightness = function(r, g, b){
-			r = parseInt(r, 16);
-			g = parseInt(g, 16);
-			b = parseInt(b, 16);
-			return Math.sqrt(
-				r * r * 0.299 +
-				g * g * 0.587 +
-				b * b * 0.114);
 
 		}, getFill = function(d){
 			var hexColor = Math.floor(Math.random()*16777215).toString(16);
@@ -200,8 +187,10 @@ var setlistVisualizer = (function(){
 			slots.append("text")
 				.attr('class', 'bandname')
 				.attr('dx', 10)
-				.attr('dy', 18)
+				.attr('dy', function(d){return d.textHeight;})
 				.attr('fill', getTextColor)
+				.attr('style', 
+					function(d){return 'font-size: '+d.textHeight+'px';})
 				.text(function(d) { return d.band; });
 		});
 	};
