@@ -1,0 +1,49 @@
+{
+	"days": [
+		{
+			"day": "Mittwoch",
+			"stages": [
+				{
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "Lost Society",
+							"from": "16:00",
+							"until": "16:45" 
+						},
+						{
+							"band": "The Vintage Caravan",
+							"from": "17:15",
+							"until": "18:00"
+						}
+
+					]
+				}
+			]
+		},
+		{
+			"day": "Donnerstag",
+			"stages": [
+				{
+					"stage": "Pain Stage",
+					"bands": [
+						{
+							"band": "Behemoth",
+							"from": "21:50",
+							"until": "22:50" 
+						}
+					]
+				}, {			
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "The New Black",
+							"from": "22:45",
+							"until": "23:15"
+						}
+					]
+				}
+			]
+		}
+	]
+}

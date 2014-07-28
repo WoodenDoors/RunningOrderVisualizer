@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setlist Visualizer</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+
+    <div id="container"></div>
+
+    <script src="js/vendor/d3.min.js"></script>
+    <script src="js/application.js"></script>
+    <script>
+      d3.json("data/example.json", function(data) {
+        var container = d3.select("#container");
+
+        data.days.forEach(function(day, i){
+          container.append('section')
+          .datum(day)
+          .call(setlistVisualizer);
+        });
+
+      });
+    </script>
+  </body>
+</html>
