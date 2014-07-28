@@ -95,6 +95,160 @@
 					]
 				}
 			]
+		},
+		{
+			"day": "Donnerstag",
+			"stages": [
+				{
+					"stage": "Main Stage",
+					"bands": [
+						{
+							"band": "The Unguided",
+							"from": "2014-08-14T12:50",
+							"until": "2014-08-14T13:35" 
+						},{
+							"band": "Kärbholz",
+							"from": "2014-08-14T14:30",
+							"until": "2014-08-14T15:15" 
+						},{
+							"band": "Eluveitie",
+							"from": "2014-08-14T16:10",
+							"until": "2014-08-14T17:10" 
+						},{
+							"band": "Arch Enemy",
+							"from": "2014-08-14T18:20",
+							"until": "2014-08-14T19:20" 
+						},{
+							"band": "Down",
+							"from": "2014-08-14T20:30",
+							"until": "2014-08-14T21:45" 
+						},{
+							"band": "Children Of Bodom",
+							"from": "2014-08-14T22:55",
+							"until": "2014-08-15T00:25" 
+						}
+					]
+				}, {
+					"stage": "Pain Stage",
+					"bands": [
+						{
+							"band": "Aborted",
+							"from": "2014-08-14T12:00",
+							"until": "2014-08-14T12:45" 
+						},{
+							"band": "Delain",
+							"from": "2014-08-14T13:40",
+							"until": "2014-08-14T14:25" 
+						},{
+							"band": "Of Mice And Men",
+							"from": "2014-08-14T15:20",
+							"until": "2014-08-14T16:05" 
+						},{
+							"band": "Caliban",
+							"from": "2014-08-14T17:15",
+							"until": "2014-08-14T18:15" 
+						},{
+							"band": "Equilibrium",
+							"from": "2014-08-14T19:25",
+							"until": "2014-08-14T20:25" 
+						},{
+							"band": "Behemoth",
+							"from": "2014-08-14T21:50",
+							"until": "2014-08-14T22:50" 
+						},{
+							"band": "Testament",
+							"from": "2014-08-15T00:30",
+							"until": "2014-08-15T01:30" 
+						}
+					]
+				}, {
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "Heretoir",
+							"from": "2014-08-14T14:30",
+							"until": "2014-08-14T15:15" 
+						},{
+							"band": "Skeletonwitch",
+							"from": "2014-08-14T15:45",
+							"until": "2014-08-14T15:15" 
+						},{
+							"band": "Mors Principium Est",
+							"from": "2014-08-14T17:00",
+							"until": "2014-08-14T16:30" 
+						},{
+							"band": "Gothminister",
+							"from": "2014-08-14T18:15",
+							"until": "2014-08-14T19:00" 
+						},{
+							"band": "The Ocean",
+							"from": "2014-08-14T19:30",
+							"until": "2014-08-14T20:15" 
+						},{
+							"band": "Secrets Of The Moon",
+							"from": "2014-08-14T20:45",
+							"until": "2014-08-14T21:30" 
+						},{
+							"band": "Twilight Of The Gods",
+							"from": "2014-08-14T22:00",
+							"until": "2014-08-14T22.45" 
+						},{
+							"band": "The Haunted",
+							"from": "2014-08-14T23:15",
+							"until": "2014-08-15T00:15" 
+						},{
+							"band": "Eskimo Callboy",
+							"from": "2014-08-15T00:45",
+							"until": "2014-08-15T01:45" 
+						},{
+							"band": "Alcest",
+							"from": "2014-08-15T02:15",
+							"until": "2014-08-15T03:00" 
+						}
+					]
+				}, {
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "Eat The Gun",
+							"from": "2014-08-14T15:15",
+							"until": "2014-08-14T15:45"
+						},{
+							"band": "Science Of Sleep",
+							"from": "2014-08-14T16:30",
+							"until": "2014-08-14T17:00"
+						},{
+							"band": "Todtgelichter",
+							"from": "2014-08-14T17:45",
+							"until": "2014-08-14T18:15"
+						},{
+							"band": "Rise Of The Northstar",
+							"from": "2014-08-14T19:00",
+							"until": "2014-08-14T19:30"
+						},{
+							"band": "Supercharger",
+							"from": "2014-08-14T20:15",
+							"until": "2014-08-14T20:45"
+						},{
+							"band": "Winter Of Sin",
+							"from": "2014-08-14T21:30",
+							"until": "2014-08-14T22:00"
+						},{
+							"band": "The New Black",
+							"from": "2014-08-14T22:45",
+							"until": "2014-08-14T23:15"
+						},{
+							"band": "Waldgeflüster",
+							"from": "2014-08-15T00:15",
+							"until": "2014-08-15T00:45"
+						},{
+							"band": "Alpha Tiger",
+							"from": "2014-08-15T01:45",
+							"until": "2014-08-15T02:15"
+						}
+					]
+				}
+			]
 		}
 	]
 }
