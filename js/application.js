@@ -148,11 +148,11 @@ var setlistVisualizer = (function(){
 			console.log(stage);
 
 			// band slots
-			var slots = yAxisGroup.selectAll(".slot")
+			var slots = yAxisGroup.selectAll(".slot-"+i)
 							.data(stage.bands)
 							.enter()
 							.append("g")
-							.attr('class', 'slot')
+							.attr('class', 'slot slot'+i)
 							.attr("transform", 
 								function(d, i) { 
 									return "translate("+
