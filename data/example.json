@@ -249,6 +249,160 @@
 					]
 				}
 			]
+		},
+		{
+			"day": "Freitag",
+			"stages": [
+				{
+					"stage": "Main Stage",
+					"bands": [
+						{
+							"band": "Crucified Barbara",
+							"from": "2014-08-15T12:50",
+							"until": "2014-08-15T13:35"
+						}, {
+							"band": "Primal Fear",
+							"from": "2014-08-15T14:30",
+							"until": "2014-08-15T15:15"
+						}, {
+							"band": "J.B.O.",
+							"from": "2014-08-15T16:10",
+							"until": "2014-08-15T17:10"
+						}, {
+							"band": "Gamma Ray",
+							"from": "2014-08-15T18:20",
+							"until": "2014-08-15T19:20"
+						}, {
+							"band": "Carcass",
+							"from": "2014-08-15T20:30",
+							"until": "2014-08-15T21:45"
+						}, {
+							"band": "Machine Head",
+							"from": "2014-08-15T22:55",
+							"until": "2014-08-16T00:25"
+						}
+					]
+				}, {
+					"stage": "Pain Stage",
+					"bands": [
+						{
+							"band": "Stahlmann",
+							"from": "2014-08-15T12:00",
+							"until": "2014-08-15T12:45"
+						}, {
+							"band": "Deadlock",
+							"from": "2014-08-15T13:40",
+							"until": "2014-08-15T14:25"
+						}, {
+							"band": "Benediction",
+							"from": "2014-08-15T15:20",
+							"until": "2014-08-15T16:05"
+						}, {
+							"band": "Ignite",
+							"from": "2014-08-15T17:15",
+							"until": "2014-08-15T18:15"
+						}, {
+							"band": "August Burns Red",
+							"from": "2014-08-15T19:25",
+							"until": "2014-08-15T20:25"
+						}, {
+							"band": "Hypocrisy",
+							"from": "2014-08-15T21:50",
+							"until": "2014-08-15T22:50"
+						}, {
+							"band": "Devin Townsend Project",
+							"from": "2014-08-16T00:30",
+							"until": "2014-08-16T01:30"
+						}
+					]
+				}, {
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "Omnium Gatherum",
+							"from": "2014-08-15T14:30",
+							"until": "2014-08-15T15:15"
+						}, {
+							"band": "Wolfheart",
+							"from": "2014-08-15T15:45",
+							"until": "2014-08-15T16:30"
+						}, {
+							"band": "Anneke Van Giersbergen",
+							"from": "2014-08-15T17:00",
+							"until": "2014-08-15T17:45"
+						}, {
+							"band": "The Agonist",
+							"from": "2014-08-15T18:15",
+							"until": "2014-08-15T19:00"
+						}, {
+							"band": "Excrementory Grindfuckers",
+							"from": "2014-08-15T19:30",
+							"until": "2014-08-15T20:15"
+						}, {
+							"band": "Maroon",
+							"from": "2014-08-15T20:45",
+							"until": "2014-08-15T21:30"
+						}, {
+							"band": "Ahab",
+							"from": "2014-08-15T22:00",
+							"until": "2014-08-15T22.45"
+						}, {
+							"band": "Die Kassierer",
+							"from": "2014-08-15T23:15",
+							"until": "2014-08-16T00:15"
+						}, {
+							"band": "Insomnium",
+							"from": "2014-08-16T00:45",
+							"until": "2014-08-16T01:45"
+						}, {
+							"band": "Einherjer",
+							"from": "2014-08-16T02:15",
+							"until": "2014-08-16T03:00"
+						}
+					]
+				}, {
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "Wound",
+							"from": "2014-08-15T15:15",
+							"until": "2014-08-15T15:45"
+						}, {
+							"band": "Malrun",
+							"from": "2014-08-15T16:30",
+							"until": "2014-08-15T17:00"
+						}, {
+							"band": "Gingerpig",
+							"from": "2014-08-15T17:45",
+							"until": "2014-08-15T18:15"
+						}, {
+							"band": "Annisokay",
+							"from": "2014-08-15T19:00",
+							"until": "2014-08-15T19:30"
+						}, {
+							"band": "Cyrcus",
+							"from": "2014-08-15T20:15",
+							"until": "2014-08-15T20:45"
+						}, {
+							"band": "Motorjesus",
+							"from": "2014-08-15T21:30",
+							"until": "2014-08-15T22:00"
+						}, {
+							"band": "The Idiots",
+							"from": "2014-08-15T22:45",
+							"until": "2014-08-15T23:15"
+						}, {
+							"band": "His Statue Falls",
+							"from": "2014-08-16T00:15",
+							"until": "2014-08-16T00:45"
+						}, {
+							"band": "Lay Down Rotten",
+							"from": "2014-08-16T01:45",
+							"until": "2014-08-16T02:15"
+						}
+					]
+				}
+			]
 		}
 	]
 }
