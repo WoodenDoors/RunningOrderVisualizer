@@ -20,6 +20,13 @@ var setlistVisualizer = (function(){
 	};
 
 	/**
+	 * returns a random color code
+	 */
+	var calcRandomHexColor = function() {
+		return Math.floor(Math.random()*16777215).toString(16);
+	};
+
+	/**
 	 * calculate brightness from rgb value
 	 */
 	var calcBrightness = function(r, g, b){
@@ -129,7 +136,15 @@ var setlistVisualizer = (function(){
 			return diff;
 
 		}, getFill = function(d){
-			var hexColor = Math.floor(Math.random()*16777215).toString(16);
+			var hexColor;
+			do {
+				hexColor = calcRandomHexColor().toString();
+			} while (
+				!(/^[0-9A-F]{6}$/i.test(hexColor)) || 
+				hexColor === '000000' ||
+				hexColor === 'ffffff'
+			);
+
 			d.textColor = calcForegroundColor(hexColor); // precalc
 			return '#'+hexColor;
 
@@ -179,6 +194,7 @@ var setlistVisualizer = (function(){
 
 			var rectangle = slots.append("rect")
 				.transition().duration(500)
+				.attr('class', 'slot-space')
 				.attr("width", getWidth)
 				.attr("height", getHeight)
 				.style("fill", getFill);
