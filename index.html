@@ -55,7 +55,7 @@
 
     <script>
       $(document).foundation();
-      if (!Modernizr.svg) {
+      if (!Modernizr.svg || !Modernizr.inlinesvg) {
         $('#loadEverything').attr('disabled', true);
         $('.not-supported').show();
       } else {
