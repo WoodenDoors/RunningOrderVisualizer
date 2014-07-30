@@ -123,6 +123,13 @@ var setlistVisualizer = (function(){
 		}, getPositionY = function(d){
 			return yScale(getDate(d.from));
 
+		}, getTransformPosition = function(d, stage){
+			return "translate("+
+				getPositionX(stage)+
+				","+
+				getPositionY(d)+
+				")";
+
 		}, getWidth = function (d) { 
 			return xScale.rangeBand();
 
@@ -150,6 +157,43 @@ var setlistVisualizer = (function(){
 
 		}, getTextColor = function(d){
 			return d.textColor; // get precalc value
+
+		}, getTextHeight = function(d){
+			return d.textHeight;
+
+		}, getScrollPositionLeft = function(){
+			return document.documentElement.scrollLeft ?
+				document.documentElement.scrollLeft :
+				document.body.scrollLeft;
+
+		}, getScrollPositionTop = function(){
+			return document.documentElement.scrollTop ?
+				document.documentElement.scrollTop :
+				document.body.scrollTop;
+
+		}, doSlotMouseover = function(d) {
+			var dateFrom = getDate(d.from),
+				dateUntil = getDate(d.until),
+				format = d3.time.format('%H:%M'),
+				xPosition = d3.event.x + getScrollPositionLeft(),
+				yPosition = d3.event.y + getScrollPositionTop();
+
+			d3.select("#tooltip")
+				.style("left", xPosition + "px")
+				.style("top", yPosition + "px")
+				.text(
+					format(dateFrom)+
+					" - "+
+					format(dateFrom)+
+					": "+
+					d.band
+				)
+				.classed("show", true);
+
+
+		}, doSlotMouseout = function(d) {
+			d3.select("#tooltip")
+				.classed("show", false);
 		};
 
 
@@ -181,14 +225,11 @@ var setlistVisualizer = (function(){
 							.enter()
 							.append("g")
 							.attr('class', 'slot slot'+i)
-							.attr("transform", 
-								function(d, i) { 
-									return "translate("+
-										getPositionX(stage)+
-										","+
-										getPositionY(d)+
-										")";
-								});
+							.attr("transform", function(d){
+								return getTransformPosition(d, stage);
+							})
+							.on("mouseover", doSlotMouseover)
+							.on("mouseout", doSlotMouseout);
 
 
 			var rectangle = slots.append("rect")
@@ -200,8 +241,8 @@ var setlistVisualizer = (function(){
 
 			slots.append("text")
 				.attr('class', 'bandname')
-				.attr('dx', 10)
-				.attr('dy', function(d){return d.textHeight;})
+				.attr('dx', 6)
+				.attr('dy', getTextHeight)
 				.attr('fill', getTextColor)
 				.attr('style', 
 					function(d){return 'font-size: '+d.textHeight+'px';})

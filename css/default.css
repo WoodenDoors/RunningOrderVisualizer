@@ -8,6 +8,10 @@ body {
 	display: none;
 }
 
+.show {
+	display: block;
+}
+
 .footer p {
 	font-size: 0.8em;
 	margin-bottom: 0.4em;
