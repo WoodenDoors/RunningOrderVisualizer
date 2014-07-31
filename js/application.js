@@ -161,22 +161,12 @@ var setlistVisualizer = (function(){
 		}, getTextHeight = function(d){
 			return d.textHeight;
 
-		}, getScrollPositionLeft = function(){
-			return document.documentElement.scrollLeft ?
-				document.documentElement.scrollLeft :
-				document.body.scrollLeft;
-
-		}, getScrollPositionTop = function(){
-			return document.documentElement.scrollTop ?
-				document.documentElement.scrollTop :
-				document.body.scrollTop;
-
 		}, doSlotMouseover = function(d) {
 			var dateFrom = getDate(d.from),
 				dateUntil = getDate(d.until),
 				format = d3.time.format('%H:%M'),
-				xPosition = d3.event.x + getScrollPositionLeft(),
-				yPosition = d3.event.y + getScrollPositionTop();
+				xPosition = d3.event.pageX + 16,
+				yPosition = d3.event.pageY + 16;
 
 			d3.select("#tooltip")
 				.style("left", xPosition + "px")
