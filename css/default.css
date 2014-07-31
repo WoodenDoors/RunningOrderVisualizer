@@ -8,8 +8,29 @@ body {
 	display: none;
 }
 
+.tooltip {
+	display: block;
+	opacity: 0;
+	pointer-events: none;
+
+	background: rgba(51,51,51,0.8);
+
+	-webkit-transition: all .25s ease-out;
+	-moz-transition: all .25s ease-out;
+	-ms-transition: all .25s ease-out;
+	-o-transition: all .25s ease-out;
+	transition: all .25s ease-out;
+
+	-webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
 .show {
 	display: block;
+	opacity: 1;
 }
 
 .footer p {
