@@ -138,6 +138,7 @@ var setlistVisualizer = (function(){
 				dateUntil = getDate(d.until),
 				diff = yScale(dateUntil.getTime()) - yScale(dateFrom.getTime());
 
+			d.gigLength = (dateUntil.getTime() - dateFrom.getTime())/60000;
 			d.textHeight = (diff < 15) ? Math.floor(diff)-1 : 16;
 
 			return diff;
@@ -176,7 +177,10 @@ var setlistVisualizer = (function(){
 					" - "+
 					format(dateFrom)+
 					": "+
-					d.band
+					d.band+
+					" ("+
+					d.gigLength+
+					"min.)"
 				)
 				.classed("show", true);
 
