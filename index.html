@@ -2,7 +2,7 @@
 <html class="no-js" lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Summer Breeze 2014 Running Order</title>
+    <title>Summer Breeze 2015 Running Order</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Setlist Visualizer</title>
     <link rel="stylesheet" href="css/normalize.css" />
@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="row">
-      <h1>RunningOrder Visualizer <small>Summer Breeze 2014</small></h1>
+      <h1>RunningOrder Visualizer <small title="only Wednesday and Thursday so far">Summer Breeze 2015</small></h1>
     </header>
 
     <section id="container" class="row">
@@ -31,7 +31,7 @@
       <div id="main-content" class="tabs-content">
         <section class="content active" id="home">
           <p>This is a small completely-client-sided visualization tool,
-            <br/>I wrote mainly to see which bands are overlapping on the Summer Breeze 2014 running order.
+            <br/>I wrote mainly to see which bands are overlapping on the Summer Breeze 2015 running order.
           <br/>Should work for any kind of festival running order if you modify the input data accordingly though.</p>
           <a href="#" id="loadEverything" class="button">Load</a>
         </section>
@@ -43,7 +43,7 @@
 
     <footer class="row footer">
       <p>source code on <a href="https://github.com/WoodenDoors/RunningOrderVisualizer">github</a></p>
-      <p>data from <a href="http://www.summer-breeze.de/de/dateien/running-order/running-order-2014.pdf">the Summer-Breeze running order</a></p>
+      <p>data from <a href="http://www.summer-breeze.de/de/dateien/running-order/2015-run-nin.gorder.pdf">the Summer-Breeze running order</a></p>
       <p>tools: <a href="http://jquery.com/">jquery</a>, <a href="http://foundation.zurb.com/">foundation</a>, <a href="http://d3js.org/">d3</a>, <a href="http://modernizr.com/">Modernizr</a>, <a href="http://subtlepatterns.com/">subtlepatterns</a></p>
 
     </footer>
@@ -62,7 +62,7 @@
       } else {
 
         $('#loadEverything').on('click', function(){
-          d3.json("data/sb2014.json", function(data) {
+          d3.json("data/sb2015.json", function(data) {
             var content = d3.select('#main-content'),
                 nav = d3.select('#main-nav');
 

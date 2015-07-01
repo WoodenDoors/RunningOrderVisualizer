@@ -1,6 +1,6 @@
 Running Order Visualizer
 ================================
-Currently with SummerBreeze 2014 data
+Currently with SummerBreeze 2015 data (*only Wednesday and Thursday so far)
 
 ## Todo
 * gig length
