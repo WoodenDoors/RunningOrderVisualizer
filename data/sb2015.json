@@ -261,6 +261,404 @@
 					]
 				}
 			]
+		},
+		{
+			"day": "Friday",
+			"stages": [
+				{
+					"stage": "Main Stage",
+					"bands": [
+						{
+							"band": "ANY GIVEN DAY",
+							"from": "2015-08-14T11:00",
+							"until": "2015-08-14T11:45"
+						},
+						{
+							"band": "KISSIN‘ DYNAMITE",
+							"from": "2015-08-14T12:40",
+							"until": "2015-08-14T13:25"
+						},
+						{
+							"band": "ALESTORM",
+							"from": "2015-08-14T14:20",
+							"until": "2015-08-14T15:05"
+						},
+						{
+							"band": "ENSIFERUM",
+							"from": "2015-08-14T16:00",
+							"until": "2015-08-14T17:00"
+						},
+						{
+							"band": "MASTODON",
+							"from": "2015-08-14T18:10",
+							"until": "2015-08-14T19:10"
+						},
+						{
+							"band": "POWERWOLF",
+							"from": "2015-08-14T20:20",
+							"until": "2015-08-14T21:35"
+						},
+						{
+							"band": "TRIVIUM",
+							"from": "2015-08-14T22:55",
+							"until": "2015-08-15T00:15"
+						}
+					]
+				}, {
+					"stage": "Pain Stage",
+					"bands": [
+						{
+							"band": "HEIDEVOLK",
+							"from": "2015-08-14T11:50",
+							"until": "2015-08-14T12:35"
+						},
+						{
+							"band": "BLUTENGEL",
+							"from": "2015-08-14T13:30",
+							"until": "2015-08-14T14:15"
+						},
+						{
+							"band": "SEPULTURA",
+							"from": "2015-08-14T15:10",
+							"until": "2015-08-14T15:55"
+						},
+						{
+							"band": "PYOGENESIS",
+							"from": "2015-08-14T17:05",
+							"until": "2015-08-14T18:05"
+						},
+						{
+							"band": "SUICIDE SILENCE",
+							"from": "2015-08-14T19:15",
+							"until": "2015-08-14T20:15"
+						},
+						{
+							"band": "BLOODBATH",
+							"from": "2015-08-14T21:40",
+							"until": "2015-08-14T22:50"
+						},
+						{
+							"band": "CRADLE OF FILTH",
+							"from": "2015-08-15T00:20",
+							"until": "2015-08-15T01:30"
+						}
+					]
+				}, {
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "SEVERE TORTURE",
+							"from": "2015-08-14T13:00",
+							"until": "2015-08-14T13:45"
+						},
+						{
+							"band": "LANTLÔS",
+							"from": "2015-08-14T14:15",
+							"until": "2015-08-14T15:00"
+						},
+						{
+							"band": "SISTER SIN",
+							"from": "2015-08-14T15:30",
+							"until": "2015-08-14T16:15"
+						},
+						{
+							"band": "THY ART IS MURDER",
+							"from": "2015-08-14T16:45",
+							"until": "2015-08-14T17:30"
+						},
+						{
+							"band": "GLORYHAMMER",
+							"from": "2015-08-14T18:00",
+							"until": "2015-08-14T18:45"
+						},
+						{
+							"band": "COMBICHRIST",
+							"from": "2015-08-14T19:15",
+							"until": "2015-08-14T20:00"
+						},
+						{
+							"band": "EKTOMORF",
+							"from": "2015-08-14T20:30",
+							"until": "2015-08-14T21:15"
+						},
+						{
+							"band": "NEAERA",
+							"from": "2015-08-14T21:45",
+							"until": "2015-08-14T22:45"
+						},
+						{
+							"band": "MARDUK",
+							"from": "2015-08-14T23:15",
+							"until": "2015-08-15T00:15"
+						},
+						{
+							"band": "WALLS OF JERICHO",
+							"from": "2015-08-15T00:45",
+							"until": "2015-08-15T01:45"
+						},
+						{
+							"band": "SCHIRENC PLAYS PUNGENT STENCH",
+							"from": "2015-08-15T02:15",
+							"until": "2015-08-15T03:00"
+						}
+					]
+				}, {
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "THE GOGETS",
+							"from": "2015-08-14T13:45",
+							"until": "2015-08-14T14:15"
+						},
+						{
+							"band": "NECROTTED",
+							"from": "2015-08-14T15:00",
+							"until": "2015-08-14T15:30"
+						},
+						{
+							"band": "LIFELESS",
+							"from": "2015-08-14T16:15",
+							"until": "2015-08-14T16:45"
+						},
+						{
+							"band": "FUCK YOU AND DIE",
+							"from": "2015-08-14T17:30",
+							"until": "2015-08-14T18:00"
+						},
+						{
+							"band": "FIRE RED EMPRESS",
+							"from": "2015-08-14T18:45",
+							"until": "2015-08-14T19:15"
+						},
+						{
+							"band": "HOUR OF PENANCE",
+							"from": "2015-08-14T20:00",
+							"until": "2015-08-14T20:30"
+						},
+						{
+							"band": "BELOW",
+							"from": "2015-08-14T21:15",
+							"until": "2015-08-14T21:45"
+						},
+						{
+							"band": "FINSTERFORST",
+							"from": "2015-08-14T22:45",
+							"until": "2015-08-14T23:15"
+						},
+						{
+							"band": "TO THE RATS AND WOLVES",
+							"from": "2015-08-15T00:15",
+							"until": "2015-08-15T00:45"
+						},
+						{
+							"band": "TEMPLE OF BAAL",
+							"from": "2015-08-15T01:45",
+							"until": "2015-08-15T02:15"
+						}
+					]
+				}
+			]
+		},{
+			"day": "Saturday",
+			"stages": [
+				{
+					"stage": "Main",
+					"bands": [
+						{
+							"band": "SERUM 114",
+							"from": "2015-08-15T11:00",
+							"until": "2015-08-15T11:45"
+						},
+						{
+							"band": "BE‘LAKOR",
+							"from": "2015-08-15T12:40",
+							"until": "2015-08-15T13:25"
+						},
+						{
+							"band": "BETONTOD",
+							"from": "2015-08-15T14:20",
+							"until": "2015-08-15T15:05"
+						},
+						{
+							"band": "KATAKLYSM",
+							"from": "2015-08-15T16:00",
+							"until": "2015-08-15T17:00"
+						},
+						{
+							"band": "PARADISE LOST",
+							"from": "2015-08-15T18:10",
+							"until": "2015-08-15T19:10"
+						},
+						{
+							"band": "HATEBREED",
+							"from": "2015-08-15T20:20",
+							"until": "2015-08-15T21:35"
+						},
+						{
+							"band": "NIGHTWISH",
+							"from": "2015-08-15T22:55",
+							"until": "2015-08-16T00:15"
+						}
+					]
+				},
+				{
+					"stage": "Pain",
+					"bands": [
+						{
+							"band": "MAJESTY",
+							"from": "2015-08-15T11:50",
+							"until": "2015-08-15T12:35"
+						},
+						{
+							"band": "HAUDEGEN",
+							"from": "2015-08-15T13:30",
+							"until": "2015-08-15T14:15"
+						},
+						{
+							"band": "EMIL BULLS",
+							"from": "2015-08-15T15:10",
+							"until": "2015-08-15T15:55"
+						},
+						{
+							"band": "KNORKATOR",
+							"from": "2015-08-15T17:05",
+							"until": "2015-08-15T18:05"
+						},
+						{
+							"band": "CANNIBAL CORPSE",
+							"from": "2015-08-15T19:15",
+							"until": "2015-08-15T20:15"
+						},
+						{
+							"band": "DARK TRANQUILLITY",
+							"from": "2015-08-15T21:40",
+							"until": "2015-08-15T22:50"
+						},
+						{
+							"band": "VENOM",
+							"from": "2015-08-16T00:20",
+							"until": "2015-08-16T01:30"
+						}
+					]
+				},
+				{
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "MILKING THE GOATMACHINE",
+							"from": "2015-08-15T13:00",
+							"until": "2015-08-15T13:45"
+						},
+						{
+							"band": "THE DUSKFALL",
+							"from": "2015-08-15T14:15",
+							"until": "2015-08-15T15:00"
+						},
+						{
+							"band": "SUICIDAL ANGELS",
+							"from": "2015-08-15T15:30",
+							"until": "2015-08-15T16:15"
+						},
+						{
+							"band": "BREAKDOWN OF SANITY",
+							"from": "2015-08-15T16:45",
+							"until": "2015-08-15T17:30"
+						},
+						{
+							"band": "HACKNEYED",
+							"from": "2015-08-15T18:00",
+							"until": "2015-08-15T18:45"
+						},
+						{
+							"band": "BELPHEGOR",
+							"from": "2015-08-15T19:15",
+							"until": "2015-08-15T20:00"
+						},
+						{
+							"band": "MORGOTH",
+							"from": "2015-08-15T20:30",
+							"until": "2015-08-15T21:15"
+						},
+						{
+							"band": "SICK OF IT ALL",
+							"from": "2015-08-15T21:45",
+							"until": "2015-08-15T22:45"
+						},
+						{
+							"band": "INQUISITION",
+							"from": "2015-08-15T23:15",
+							"until": "2015-08-16T00:15"
+						},
+						{
+							"band": "GHOST BRIGADE",
+							"from": "2015-08-16T00:45",
+							"until": "2015-08-16T01:45"
+						},
+						{
+							"band": "DARK FORTRESS",
+							"from": "2015-08-16T02:15",
+							"until": "2015-08-16T03:00"
+						}
+					]
+				},
+				{
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "RELIQUIAE",
+							"from": "2015-08-15T13:45",
+							"until": "2015-08-15T14:15"
+						},
+						{
+							"band": "PRIPJAT",
+							"from": "2015-08-15T15:00",
+							"until": "2015-08-15T15:30"
+						},
+						{
+							"band": "DUST BOLT",
+							"from": "2015-08-15T16:15",
+							"until": "2015-08-15T16:45"
+						},
+						{
+							"band": "RECTAL SMEGMA",
+							"from": "2015-08-15T17:30",
+							"until": "2015-08-15T18:00"
+						},
+						{
+							"band": "CHAPEL OF DISEASE",
+							"from": "2015-08-15T18:45",
+							"until": "2015-08-15T19:15"
+						},
+						{
+							"band": "DREAMSHADE",
+							"from": "2015-08-15T20:00",
+							"until": "2015-08-15T20:30"
+						},
+						{
+							"band": "REVEL IN FLESH",
+							"from": "2015-08-15T21:15",
+							"until": "2015-08-15T21:45"
+						},
+						{
+							"band": "TERROR UNIVERSAL",
+							"from": "2015-08-15T22:45",
+							"until": "2015-08-15T23:15"
+						},
+						{
+							"band": "TROLDHAUGEN",
+							"from": "2015-08-16T00:15",
+							"until": "2015-08-16T00:45"
+						},
+						{
+							"band": "NAILED TO OBSCURITY",
+							"from": "2015-08-16T01:45",
+							"until": "2015-08-16T02:15"
+						}
+					]
+				}
+			]
 		}
 	]
 }
+
+
