@@ -33,6 +33,10 @@ body {
 	opacity: 1;
 }
 
+.footer {
+	color: grey;
+}
+
 .footer p {
 	font-size: 0.8em;
 	margin-bottom: 0.4em;
