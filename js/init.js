@@ -29,11 +29,15 @@
 			});
 
 			$('#loadEverything').hide();
-			$('.highlightActivatorContainer').show();
+
+			if(Modernizr.localstorage) {
+				$('.highlightActivatorContainer').show();
+			}
 		});
 
 		$('.highlightActivator').on('click', function(){
 			runningOrderHighlighter.init();
+			$('.highlightActivatorContainer').hide();
 		});
 	}
 })(jQuery);
