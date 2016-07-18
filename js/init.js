@@ -29,6 +29,11 @@
 			});
 
 			$('#loadEverything').hide();
+			$('.highlightActivatorContainer').show();
+		});
+
+		$('.highlightActivator').on('click', function(){
+			runningOrderHighlighter.init();
 		});
 	}
 })(jQuery);
