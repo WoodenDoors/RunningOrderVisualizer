@@ -1,98 +1,68 @@
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Summer Breeze 2016 Running Order</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>RunningOrder Visualizer</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/foundation.min.css" />
-    <link rel="stylesheet" href="css/default.css" />
-    <script src="js/vendor/modernizr.js"></script>
-    
-  </head>
-  <body>
-    <header class="row">
-      <h1>RunningOrder Visualizer <small>Summer Breeze 2016</small></h1>
-    </header>
+<head>
+	<meta charset="utf-8"/>
+	<title>Summer Breeze 2016 Running Order</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>RunningOrder Visualizer</title>
+	<link rel="stylesheet" href="css/vendor/normalize.css"/>
+	<link rel="stylesheet" href="css/vendor/foundation.min.css"/>
+	<link rel="stylesheet" href="css/default.css"/>
+	<script src="js/vendor/modernizr.js"></script>
 
-    <section id="container" class="row">
-      <div class="not-supported alert-box alert">Your browser doesn't support the requirements of this page. Go get a modern browser.</div>
+</head>
+<body>
+<header class="row">
+	<h1>RunningOrder Visualizer
+		<small>Summer Breeze 2016</small>
+	</h1>
+</header>
 
-      <!-- tab nav BEGIN -->
-      <ul id="main-nav" class="tabs" data-tab>
-        <li class="tab-title active">
-          <a href="#home">Start</a>
-        </li>
-      </ul>
-      <!-- tab nav END -->
+<section id="container" class="row">
+	<div class="not-supported alert-box alert">Your browser doesn't support the requirements of this page. Go get a modern
+		browser.
+	</div>
 
-      <!-- tab content BEGIN -->
-      <div id="main-content" class="tabs-content">
-        <section class="content active" id="home">
-          <p>This is a small completely-client-sided visualization tool,
-          <br/>I wrote mainly to see <strong>which bands are overlapping on a running order</strong>.
-          <br/>Should work for any kind of festival running order if you modify the input data accordingly though.</p>
-          <a href="#" id="loadEverything" class="button">Show me!</a>
-        </section>
-      </div>
-      <!-- tab content END -->
+	<!-- tab nav BEGIN -->
+	<ul id="main-nav" class="tabs" data-tab>
+		<li class="tab-title active">
+			<a href="#home">Start</a>
+		</li>
+	</ul>
+	<!-- tab nav END -->
 
-      <div id="tooltip" class="tooltip"></div>
-    </section>
+	<!-- tab content BEGIN -->
+	<div id="main-content" class="tabs-content">
+		<section class="content active" id="home">
+			<p>This is a small completely-client-sided visualization tool,
+				<br/>I wrote mainly to see <strong>which bands are overlapping on a running order</strong>.
+				<br/>Should work for any kind of festival running order if you modify the input data accordingly though.</p>
+			<a href="#" id="loadEverything" class="button">Show me!</a>
+		</section>
+	</div>
+	<!-- tab content END -->
 
-    <footer class="row footer">
-      <p>source code on <a href="https://github.com/WoodenDoors/RunningOrderVisualizer">github</a></p>
-      <p>data from <a href="http://www.summer-breeze.de/en/running-order/index.html">the Summer-Breeze running order</a></p>
-      <p>
-        tools:
-        <a href="http://jquery.com/">jquery</a>,
-        <a href="http://foundation.zurb.com/">foundation</a>,
-        <a href="http://d3js.org/">d3</a>, <a href="http://modernizr.com/">Modernizr</a>,
-        <a href="http://subtlepatterns.com/">subtlepatterns</a>
-      </p>
+	<div id="tooltip" class="tooltip"></div>
+</section>
 
-    </footer>
+<footer class="row footer">
+	<p>source code on <a href="https://github.com/WoodenDoors/RunningOrderVisualizer">github</a></p>
+	<p>data from <a href="http://www.summer-breeze.de/en/running-order/index.html">the Summer-Breeze running order</a></p>
+	<p>
+		tools:
+		<a href="http://jquery.com/">jquery</a>,
+		<a href="http://foundation.zurb.com/">foundation</a>,
+		<a href="http://d3js.org/">d3</a>, <a href="http://modernizr.com/">Modernizr</a>,
+		<a href="http://subtlepatterns.com/">subtlepatterns</a>
+	</p>
 
-    <script src="js/vendor/jquery-1.11.1.min.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/vendor/d3.min.js"></script>
-    <script src="js/vendor/foundation.tab.js"></script>
-    <script src="js/visualizer.js"></script>
+</footer>
 
-    <script>
-      $(document).foundation();
-      if (!Modernizr.svg || !Modernizr.inlinesvg) {
-        $('#loadEverything').attr('disabled', true);
-        $('.not-supported').show();
-      } else {
-
-        $('#loadEverything').on('click', function(){
-          d3.json("data/sb2016.json", function(data) {
-            var content = d3.select('#main-content'),
-                nav = d3.select('#main-nav');
-
-            data.days.forEach(function(day, i){
-              var dayName = day.day,
-                  dayNameLowercase = dayName.toLowerCase();
-
-              nav.append('li')
-                .attr('class', 'tab-title active')
-                .append('a')
-                .attr('href', '#'+dayNameLowercase)
-                .text(dayName);
-
-              content.append('section')
-              .attr('class', 'content')
-              .attr('id', dayNameLowercase)
-              .datum(day)
-              .call(runningOrderVisualizer);
-            });
-          });
-
-          $('#loadEverything').hide();
-        });
-      }
-    </script>
-  </body>
+<script src="js/vendor/jquery-1.11.1.min.js"></script>
+<script src="js/vendor/foundation.js"></script>
+<script src="js/vendor/d3.min.js"></script>
+<script src="js/vendor/foundation.tab.js"></script>
+<script src="js/visualizer.js"></script>
+<script src="js/init.js"></script>
+</body>
 </html>
