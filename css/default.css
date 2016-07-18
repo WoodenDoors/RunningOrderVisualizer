@@ -55,3 +55,12 @@ body {
 .xaxis path {
 	stroke: none;
 }
+
+@media print {
+	.footer,
+	#loadEverything,
+	.highlightActivatorContainer,
+	.tab-title:not(.active) {
+		display: none !important;
+	}
+}
