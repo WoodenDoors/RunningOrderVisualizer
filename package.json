@@ -1,5 +1,5 @@
 {
-  "name": "SetlistVisualizer",
+  "name": "RunningOrderVisualizer",
   "version": "0.1.0",
   "devDependencies": {
     "grunt-cli": "~0.1",
