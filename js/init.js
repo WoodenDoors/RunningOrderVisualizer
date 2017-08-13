@@ -6,7 +6,7 @@
 	} else {
 
 		$('#loadEverything').on('click', function () {
-			d3.json("data/sb2016.json", function (data) {
+			d3.json("data/sb2017.json", function (data) {
 				var content = d3.select('#main-content'),
 					nav = d3.select('#main-nav');
 

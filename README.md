@@ -1,6 +1,5 @@
-Running Order Visualizer
-================================
-Currently with SummerBreeze 2016 data
+# Running Order Visualizer
+currently with SummerBreeze 2017 data
 
 ## Todo
 * exact times on hover

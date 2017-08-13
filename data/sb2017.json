@@ -1,0 +1,854 @@
+{
+	"days": [
+		{
+			"day": "Tuesday",
+			"stages": [
+				{
+					"stage": "Campsite Circus",
+					"bands": [
+						{
+							"band": "METAL.DE DISCO",
+							"from": "2017-08-15T23:00",
+							"until": "2017-08-16T02:00"
+						},
+						{
+							"band": "TRAGEDY (Karaoke Show)",
+							"from": "2017-08-15T21:00",
+							"until": "2017-08-15T22:30"
+						},
+						{
+							"band": "TRAGEDY",
+							"from": "2017-08-15T19:00",
+							"until": "2017-08-15T20:30"
+						},
+						{
+							"band": "THE ROCK`N`ROLL WRESTLING BASH",
+							"from": "2017-08-15T17:00",
+							"until": "2017-08-15T18:30"
+						}
+					]
+				}
+			]
+		},
+		{
+			"day": "Wednesday",
+			"stages": [
+				{
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "STEVE `N` SEAGULLS",
+							"from": "2017-08-17T02:00",
+							"until": "2017-08-17T03:00"
+						},
+						{
+							"band": "Surprise Act",
+							"from": "2017-08-17T00:30",
+							"until": "2017-08-17T01:30"
+						},
+						{
+							"band": "Surprise Act",
+							"from": "2017-08-16T22:45",
+							"until": "2017-08-16T23:45"
+						},
+						{
+							"band": "Surprise Act",
+							"from": "2017-08-16T21:00",
+							"until": "2017-08-16T22:00"
+						},
+						{
+							"band": "Surprise Act",
+							"from": "2017-08-16T19:45",
+							"until": "2017-08-16T20:30"
+						},
+						{
+							"band": "Surprise Act",
+							"from": "2017-08-16T18:30",
+							"until": "2017-08-16T19:15"
+						},
+						{
+							"band": "Surprise Act",
+							"from": "2017-08-16T17:15",
+							"until": "2017-08-16T18:00"
+						},
+						{
+							"band": "BLASMUSIK ILLENSCHWANG",
+							"from": "2017-08-16T16:00",
+							"until": "2017-08-16T16:45"
+						}
+					]
+				},
+				{
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "BEMBERS",
+							"from": "2017-08-16T15:00",
+							"until": "2017-08-16T15:28"
+						},
+						{
+							"band": "NIGHT DEMON",
+							"from": "2017-08-16T16:15",
+							"until": "2017-08-16T17:00"
+						},
+						{
+							"band": "KONTINUUM",
+							"from": "2017-08-16T17:45",
+							"until": "2017-08-16T18:30"
+						},
+						{
+							"band": "UADA",
+							"from": "2017-08-16T19:30",
+							"until": "2017-08-16T20:15"
+						},
+						{
+							"band": "VITAL REMAINS",
+							"from": "2017-08-16T21:30",
+							"until": "2017-08-16T22:15"
+						},
+						{
+							"band": "SISTER",
+							"from": "2017-08-16T23:45",
+							"until": "2017-08-17T00:30"
+						},
+						{
+							"band": "SCHAMMASCH",
+							"from": "2017-08-17T01:15",
+							"until": "2017-08-17T02:00"
+						}
+					]
+				},
+				{
+					"stage": "Campsite Circus",
+					"bands": [
+						{
+							"band": "THE ROCK`N`ROLL WRESTLING BASH",
+							"from": "2017-08-16T17:00",
+							"until": "2017-08-16T18:30"
+						},
+						{
+							"band": "TRAGEDY",
+							"from": "2017-08-16T23:30",
+							"until": "2017-08-17T00:030"
+						},
+						{
+							"band": "TRAGEDY (Karaoke Show)",
+							"from": "2017-08-17T00:30",
+							"until": "2017-08-17T02:00"
+						}
+					]
+				}
+			]
+		},
+		{
+			"day": "Thursday",
+			"stages": [
+				{
+					"stage": "Breeze Stage",
+					"bands": [
+						{
+							"band": "FIRKIN",
+							"from": "2017-08-17T11:00",
+							"until": "2017-08-17T11:45"
+						},
+						{
+							"band": "WHILE SHE SLEEPS",
+							"from": "2017-08-17T12:50",
+							"until": "2017-08-17T13:35"
+						},
+						{
+							"band": "WHITECHAPEL",
+							"from": "2017-08-17T14:40",
+							"until": "2017-08-17T15:40"
+						},
+						{
+							"band": "AUGUST BURNS RED",
+							"from": "2017-08-17T17:00",
+							"until": "2017-08-17T18:00"
+						},
+						{
+							"band": "DEVIN TOWNSEND PROJECT",
+							"from": "2017-08-17T19:20",
+							"until": "2017-08-17T20:20"
+						},
+						{
+							"band": "AMON AMARTH",
+							"from": "2017-08-17T22:10",
+							"until": "2017-08-17T23:40"
+						},
+						{
+							"band": "WARDRUNA",
+							"from": "2017-08-18T01:00",
+							"until": "2017-08-18T02:00"
+						}
+					]
+				},
+				{
+					"stage": "Pain Stage",
+					"bands": [
+						{
+							"band": "THE NEW ROSES",
+							"from": "2017-08-17T11:55",
+							"until": "2017-08-17T12:40"
+						},
+						{
+							"band": "MISS MAY I",
+							"from": "2017-08-17T13:45",
+							"until": "2017-08-17T14:30"
+						},
+						{
+							"band": "OBITUARY",
+							"from": "2017-08-17T15:50",
+							"until": "2017-08-17T16:50"
+						},
+						{
+							"band": "LIFE OF AGONY",
+							"from": "2017-08-17T18:10",
+							"until": "2017-08-17T19:10"
+						},
+						{
+							"band": "MEGADETH",
+							"from": "2017-08-17T20:30",
+							"until": "2017-08-17T22:00"
+						},
+						{
+							"band": "IN EXTREMO",
+							"from": "2017-08-17T23:50",
+							"until": "2017-08-18T00:50"
+						}
+					]
+				},
+				{
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "FIT FOR AN AUTOPSY",
+							"from": "2017-08-17T12:00",
+							"until": "2017-08-17T12:50"
+						},
+						{
+							"band": "OCEANS ATE ALASKA",
+							"from": "2017-08-17T13:15",
+							"until": "2017-08-17T14:00"
+						},
+						{
+							"band": "WITHIN THE RUINS",
+							"from": "2017-08-17T14:30",
+							"until": "2017-08-17T15:15"
+						},
+						{
+							"band": "TESSERACT",
+							"from": "2017-08-17T15:45",
+							"until": "2017-08-17T16:30"
+						},
+						{
+							"band": "LONG DISTANCE CALLING",
+							"from": "2017-08-17T17:00",
+							"until": "2017-08-17T17:45"
+						},
+						{
+							"band": "DECAPITATED",
+							"from": "2017-08-17T18:15",
+							"until": "2017-08-17T19:00"
+						},
+						{
+							"band": "SUFFOCATION",
+							"from": "2017-08-17T19:30",
+							"until": "2017-08-17T20:15"
+						},
+						{
+							"band": "NILE",
+							"from": "2017-08-17T20:45",
+							"until": "2017-08-17T21:30"
+						},
+						{
+							"band": "MOONSPELL",
+							"from": "2017-08-17T22:00",
+							"until": "2017-08-17T23:00"
+						},
+						{
+							"band": "ARCHITECTS",
+							"from": "2017-08-17T23:30",
+							"until": "2017-08-18T00:30"
+						},
+						{
+							"band": "ENSIFERUM",
+							"from": "2017-08-18T01:00",
+							"until": "2017-08-18T02:00"
+						},
+						{
+							"band": "CRYPTOPSY",
+							"from": "2017-08-18T02:30",
+							"until": "2017-08-18T03:15"
+						}
+					]
+				},
+				{
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "ERDLING",
+							"from": "2017-08-17T12:45",
+							"until": "2017-08-17T13:15"
+						},
+						{
+							"band": "FIGHT THE FIGHT",
+							"from": "2017-08-17T14:00",
+							"until": "2017-08-17T14:30"
+						},
+						{
+							"band": "CARNATION",
+							"from": "2017-08-17T15:15",
+							"until": "2017-08-17T15:45"
+						},
+						{
+							"band": "BLACK INHALE",
+							"from": "2017-08-17T16:30",
+							"until": "2017-08-17T17:00"
+						},
+						{
+							"band": "TURBOBIER",
+							"from": "2017-08-17T17:45",
+							"until": "2017-08-17T18:15"
+						},
+						{
+							"band": "DAWN OF DISEASE",
+							"from": "2017-08-17T19:00",
+							"until": "2017-08-17T19:30"
+						},
+						{
+							"band": "CRUSHING CASPARS",
+							"from": "2017-08-17T20:15",
+							"until": "2017-08-17T20:45"
+						},
+						{
+							"band": "CUT UP",
+							"from": "2017-08-17T21:30",
+							"until": "2017-08-17T22:00"
+						},
+						{
+							"band": "SPOIL ENGINE",
+							"from": "2017-08-17T23:00",
+							"until": "2017-08-17T23:30"
+						},
+						{
+							"band": "REVEL IN FLESH",
+							"from": "2017-08-18T00:30",
+							"until": "2017-08-18T01:00"
+						},
+						{
+							"band": "FIRTAN",
+							"from": "2017-08-18T02:00",
+							"until": "2017-08-18T02:30"
+						}
+					]
+				},
+				{
+					"stage": "Campsite Circus",
+					"bands": [
+						{
+							"band": "MOONSPELL (Unplugged)",
+							"from": "2017-08-17T19:00",
+							"until": "2017-08-17T19:45"
+						},
+						{
+							"band": "FIDDLER'S GREEN (Unplugged)",
+							"from": "2017-08-17T21:00",
+							"until": "2017-08-17T21:45"
+						},
+						{
+							"band": "TRAGEDY",
+							"from": "2017-08-17T23:30",
+							"until": "2017-08-18T01:00"
+						},
+						{
+							"band": "TRAGEDY (Karaoke Show)",
+							"from": "2017-08-18T01:00",
+							"until": "2017-08-18T02:00"
+						}
+					]
+				}
+			]
+		},
+		{
+			"day": "Friday",
+			"stages": [
+				{
+					"stage": "Breeze Stage",
+					"bands": [
+						{
+							"band": "AMORPHIS",
+							"from": "2017-08-19T01:00",
+							"until": "2017-08-19T02:00"
+						},
+						{
+							"band": "KREATOR",
+							"from": "2017-08-18T22:10",
+							"until": "2017-08-18T23:40"
+						},
+						{
+							"band": "HATEBREED",
+							"from": "2017-08-18T19:20",
+							"until": "2017-08-18T20:20"
+						},
+						{
+							"band": "EPICA",
+							"from": "2017-08-18T17:00",
+							"until": "2017-08-18T18:00"
+						},
+						{
+							"band": "SONATA ARCTICA",
+							"from": "2017-08-18T14:40",
+							"until": "2017-08-18T15:40"
+						},
+						{
+							"band": "MEMORIAM",
+							"from": "2017-08-18T12:50",
+							"until": "2017-08-18T13:35"
+						},
+						{
+							"band": "AVERSIONS CROWN",
+							"from": "2017-08-18T11:00",
+							"until": "2017-08-18T11:45"
+						}
+					]
+				},
+				{
+					"stage": "Summer Stage",
+					"bands": [
+						{
+							"band": "WINTERSUN",
+							"from": "2017-08-18T23:50",
+							"until": "2017-08-19T00:50"
+						},
+						{
+							"band": "CHILDREN OF BODOM",
+							"from": "2017-08-18T21:50",
+							"until": "2017-08-18T22:50"
+						},
+						{
+							"band": "ELUVEITIE",
+							"from": "2017-08-18T18:10",
+							"until": "2017-08-18T19:10"
+						},
+						{
+							"band": "BETONTOD",
+							"from": "2017-08-18T15:50",
+							"until": "2017-08-18T16:50"
+						},
+						{
+							"band": "BATTLE BEAST",
+							"from": "2017-08-18T13:45",
+							"until": "2017-08-18T14:40"
+						},
+						{
+							"band": "CELLAR DARLING",
+							"from": "2017-08-18T11:55",
+							"until": "2017-08-18T12:40"
+						}
+					]
+				},
+				{
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "1349",
+							"from": "2017-08-19T02:30",
+							"until": "2017-08-19T03:15"
+						},
+						{
+							"band": "BELPHEGOR",
+							"from": "2017-08-19T01:00",
+							"until": "2017-08-19T02:00"
+						},
+						{
+							"band": "EISREGEN",
+							"from": "2017-08-18T23:30",
+							"until": "2017-08-19T00:30"
+						},
+						{
+							"band": "INSOMNIUM",
+							"from": "2017-08-18T22:00",
+							"until": "2017-08-18T23:00"
+						},
+						{
+							"band": "CHELSEA GRIN",
+							"from": "2017-08-18T20:45",
+							"until": "2017-08-18T21:30"
+						},
+						{
+							"band": "POSSESSED",
+							"from": "2017-08-18T19:30",
+							"until": "2017-08-18T20:15"
+						},
+						{
+							"band": "CROWBAR",
+							"from": "2017-08-18T18:15",
+							"until": "2017-08-18T19:00"
+						},
+						{
+							"band": "SACRED REICH",
+							"from": "2017-08-18T17:00",
+							"until": "2017-08-18T17:45"
+						},
+						{
+							"band": "GORGUTS",
+							"from": "2017-08-18T15:45",
+							"until": "2017-08-18T16:30"
+						},
+						{
+							"band": "MORS PRINCIPIUM EST",
+							"from": "2017-08-18T14:30",
+							"until": "2017-08-18T15:15"
+						},
+						{
+							"band": "FALLUJAH",
+							"from": "2017-08-18T13:15",
+							"until": "2017-08-18T14:00"
+						},
+						{
+							"band": "REVOCATION",
+							"from": "2017-08-18T12:00",
+							"until": "2017-08-18T12:45"
+						}
+					]
+				},
+				{
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "WALDGEFLÜSTER",
+							"from": "2017-08-19T02:00",
+							"until": "2017-08-19T02:30"
+						},
+						{
+							"band": "THE LURKING FEAR",
+							"from": "2017-08-19T00:30",
+							"until": "2017-08-19T01:00"
+						},
+						{
+							"band": "GLORYFUL",
+							"from": "2017-08-18T23:00",
+							"until": "2017-08-18T23:30"
+						},
+						{
+							"band": "SHIRAZ LANE",
+							"from": "2017-08-18T21:30",
+							"until": "2017-08-18T22:00"
+						},
+						{
+							"band": "SPITFIRE",
+							"from": "2017-08-18T20:15",
+							"until": "2017-08-18T20:45"
+						},
+						{
+							"band": "NOTHGARD",
+							"from": "2017-08-18T19:00",
+							"until": "2017-08-18T19:30"
+						},
+						{
+							"band": "HUMILIATION",
+							"from": "2017-08-18T17:45",
+							"until": "2017-08-18T18:15"
+						},
+						{
+							"band": "DOUBLE CRUSH SYNDROME",
+							"from": "2017-08-18T16:30",
+							"until": "2017-08-18T17:00"
+						},
+						{
+							"band": "INFECTED RAIN",
+							"from": "2017-08-18T15:15",
+							"until": "2017-08-18T15:45"
+						},
+						{
+							"band": "SUPERNOVA PLASMAJETS",
+							"from": "2017-08-18T14:00",
+							"until": "2017-08-18T14:45"
+						},
+						{
+							"band": "SKELETON PIT",
+							"from": "2017-08-18T12:45",
+							"until": "2017-08-18T13:15"
+						}
+					]
+				},
+				{
+					"stage": "Campsite Circus",
+					"bands": [
+						{
+							"band": "TRAGEDY (Karaoke Show)",
+							"from": "2017-08-19T01:00",
+							"until": "2017-08-19T02:00"
+						},
+						{
+							"band": "TRAGEDY",
+							"from": "2017-08-18T23:30",
+							"until": "2017-08-19T01:00"
+						},
+						{
+							"band": "DARKNESS, BLACKSMITH & KERKER",
+							"from": "2017-08-18T21:00",
+							"until": "2017-08-18T21:45"
+						},
+						{
+							"band": "MOST METAL TATTOO CONTEST",
+							"from": "2017-08-18T19:00",
+							"until": "2017-08-18T20:00"
+						},
+						{
+							"band": "NACHTGESCHREI",
+							"from": "2017-08-18T16:00",
+							"until": "2017-08-18T16:45"
+						},
+						{
+							"band": "ELUVEITIE (Unplugged)",
+							"from": "2017-08-18T14:30",
+							"until": "2017-08-18T15:15"
+						}
+					]
+				}
+			]
+		},
+		{
+			"day": "Saturday",
+			"stages": [
+				{
+					"stage": "Breeze Stage",
+					"bands": [
+						{
+							"band": "MR. HURLEY & DIE PULVERAFFEN",
+							"from": "2017-08-19T11:00",
+							"until": "2017-08-19T11:45"
+						},
+						{
+							"band": "PRIMAL FEAR",
+							"from": "2017-08-19T12:50",
+							"until": "2017-08-19T13:35"
+						},
+						{
+							"band": "MONO INC.",
+							"from": "2017-08-19T14:40",
+							"until": "2017-08-19T15:40"
+						},
+						{
+							"band": "KNORKATOR",
+							"from": "2017-08-19T17:00",
+							"until": "2017-08-19T18:00"
+						},
+						{
+							"band": "DARK TRANQUILLITY",
+							"from": "2017-08-19T19:20",
+							"until": "2017-08-19T20:20"
+						},
+						{
+							"band": "KORN",
+							"from": "2017-08-19T22:10",
+							"until": "2017-08-19T23:40"
+						},
+						{
+							"band": "FINNTROLL",
+							"from": "2017-08-20T01:00",
+							"until": "2017-08-20T02:00"
+						}
+					]
+				},
+				{
+					"stage": "Summer Stage",
+					"bands": [
+						{
+							"band": "EXCREMENTORY GRINDFUCKERS",
+							"from": "2017-08-19T11:55",
+							"until": "2017-08-19T12:40"
+						},
+						{
+							"band": "DELAIN",
+							"from": "2017-08-19T13:45",
+							"until": "2017-08-19T14:30"
+						},
+						{
+							"band": "EMIL BULLS",
+							"from": "2017-08-19T15:50",
+							"until": "2017-08-19T16:50"
+						},
+						{
+							"band": "OVERKILL",
+							"from": "2017-08-19T18:10",
+							"until": "2017-08-19T19:10"
+						},
+						{
+							"band": "HEAVEN SHALL BURN",
+							"from": "2017-08-19T20:30",
+							"until": "2017-08-19T22:00"
+						},
+						{
+							"band": "CANTUS BURANUS",
+							"from": "2017-08-19T23:50",
+							"until": "2017-08-20T00:50"
+						}
+					]
+				},
+				{
+					"stage": "T-Stage",
+					"bands": [
+						{
+							"band": "THE NEW BLACK",
+							"from": "2017-08-19T12:00",
+							"until": "2017-08-19T12:45"
+						},
+						{
+							"band": "UNZUCHT",
+							"from": "2017-08-19T13:15",
+							"until": "2017-08-19T14:00"
+						},
+						{
+							"band": "BENIGHTED",
+							"from": "2017-08-19T14:30",
+							"until": "2017-08-19T15:15"
+						},
+						{
+							"band": "DER WEG EINER FREIHEIT",
+							"from": "2017-08-19T15:45",
+							"until": "2017-08-19T16:30"
+						},
+						{
+							"band": "HAVOK",
+							"from": "2017-08-19T17:00",
+							"until": "2017-08-19T17:45"
+						},
+						{
+							"band": "END OF GREEN",
+							"from": "2017-08-19T18:15",
+							"until": "2017-08-19T19:00"
+						},
+						{
+							"band": "TERROR",
+							"from": "2017-08-19T19:30",
+							"until": "2017-08-19T20:15"
+						},
+						{
+							"band": "ASPHYX",
+							"from": "2017-08-19T20:45",
+							"until": "2017-08-19T21:30"
+						},
+						{
+							"band": "TIAMAT",
+							"from": "2017-08-19T22:00",
+							"until": "2017-08-19T23:00"
+						},
+						{
+							"band": "FIDDLER'S GREEN",
+							"from": "2017-08-19T23:30",
+							"until": "2017-08-20T00:30"
+						},
+						{
+							"band": "HAGGARD",
+							"from": "2017-08-20T01:00",
+							"until": "2017-08-20T02:00"
+						},
+						{
+							"band": "MGLA",
+							"from": "2017-08-20T02:30",
+							"until": "2017-08-20T03:15"
+						}
+					]
+				},
+				{
+					"stage": "Camel Stage",
+					"bands": [
+						{
+							"band": "RANDALE (All Ages Show)",
+							"from": "2017-08-19T12:45",
+							"until": "2017-08-19T13:15"
+						},
+						{
+							"band": "CRISIX",
+							"from": "2017-08-19T14:00",
+							"until": "2017-08-19T14:30"
+						},
+						{
+							"band": "IMMINENCE",
+							"from": "2017-08-19T15:15",
+							"until": "2017-08-19T15:45"
+						},
+						{
+							"band": "MOTORJESUS",
+							"from": "2017-08-19T16:30",
+							"until": "2017-08-19T17:00"
+						},
+						{
+							"band": "KITTY IN A CASKET",
+							"from": "2017-08-19T17:45",
+							"until": "2017-08-19T18:15"
+						},
+						{
+							"band": "THE CHARM THE FURY",
+							"from": "2017-08-19T19:00",
+							"until": "2017-08-19T19:30"
+						},
+						{
+							"band": "WOLFCHANT",
+							"from": "2017-08-19T20:15",
+							"until": "2017-08-19T20:45"
+						},
+						{
+							"band": "FJOERGYN",
+							"from": "2017-08-19T21:30",
+							"until": "2017-08-19T22:00"
+						},
+						{
+							"band": "CYPECORE",
+							"from": "2017-08-19T23:00",
+							"until": "2017-08-19T23:30"
+						},
+						{
+							"band": "ENDSEEKER",
+							"from": "2017-08-20T00:30",
+							"until": "2017-08-20T01:00"
+						},
+						{
+							"band": "EÏS",
+							"from": "2017-08-20T02:00",
+							"until": "2017-08-20T02:30"
+						}
+					]
+				},
+				{
+					"stage": "Campsite Circus",
+					"bands": [
+						{
+							"band": "THE NEW BLACK (Unplugged)",
+							"from": "2017-08-19T14:30",
+							"until": "2017-08-19T15:00"
+						},
+						{
+							"band": "RANDALE (Kids Show)",
+							"from": "2017-08-19T16:00",
+							"until": "2017-08-19T17:10"
+						},
+						{
+							"band": "CORVUS CORAX (Unplugged)",
+							"from": "2017-08-19T18:30",
+							"until": "2017-08-19T19:15"
+						},
+						{
+							"band": "KNORKATOR (Unplugged)",
+							"from": "2017-08-19T21:00",
+							"until": "2017-08-19T21:45"
+						},
+						{
+							"band": "TRAGEDY",
+							"from": "2017-08-19T23:30",
+							"until": "2017-08-20T01:00"
+						},
+						{
+							"band": "TRAGEDY (Karaoke Show)",
+							"from": "2017-08-20T01:00",
+							"until": "2017-08-20T02:00"
+						}
+					]
+				}
+			]
+		}
+	]
+}
